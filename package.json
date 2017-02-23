@@ -1,0 +1,39 @@
+{
+  "name": "botpress-version-manager",
+  "version": "1.0.0",
+  "description": "Dependency manager for Botpress modules",
+  "main": "lib/index.js",
+  "scripts": {
+    "compile": "babel -d lib/ index.js -s",
+    "watch": "babel -d lib/ -w index.js -s",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": ["latest", "stage-0"],
+    "plugins": ["transform-object-rest-spread"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/botpress/botpress-version-manager.git"
+  },
+  "keywords": [
+    "dependency",
+    "version",
+    "botpress"
+  ],
+  "author": "Botpress Team",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/botpress/botpress-version-manager/issues"
+  },
+  "homepage": "https://github.com/botpress/botpress-version-manager#readme",
+  "dependencies": {
+    "semver": "^5.3.0",
+    "babel-core": "^6.18.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-rest-spread": "^6.16.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0"
+  }
+}
