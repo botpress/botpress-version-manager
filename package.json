@@ -1,6 +1,6 @@
 {
   "name": "botpress-version-manager",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Dependency manager for Botpress modules",
   "main": "lib/index.js",
   "scripts": {
