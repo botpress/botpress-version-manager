@@ -22,6 +22,7 @@ module.exports = (bp, module_directory) => {
   }
 
   if (!semver.valid(currentBotpressVersion)) {
+    bp.logger.warn('Invalid Botpress version: ' + currentBotpressVersion)
     return true
   }
 
