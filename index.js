@@ -21,6 +21,10 @@ module.exports = (bp, module_directory) => {
     return true
   }
 
+  if (!semver.valid(currentBotpressVersion)) {
+    return true
+  }
+
   if (semver.satisfies(currentBotpressVersion, version['botpress-check'])) {
     return true
   }
